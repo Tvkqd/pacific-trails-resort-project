@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Tuyen Vu">
+    <meta name="description" content="Travel at Pacific Trails Resort">
+    <meta name="keywords" content="Travel, Trails, Pacific">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pacific.css">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+        </script>
+    <![endif]-->
+    <title>Pacific Trails Resort :: Reservations by Tuyen Vu</title>
+    <!-- ******************** JavaScript Validation ****************** -->
+    <script>
+        function validationForm() {
+            if (document.forms[0].myNights.value < 1) {
+                alert("Nights must be 1 or greater.");
+                return false;
+            }
+
+            if (document.forms[0].myNights.value > 14) {
+                alert("Nights must be less then 14.");
+            }
+        }
+    </script>
+    <!-- ********************** JQuery Validation ******************** -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('form').validate();
+        });
+    </script>
+</head>
+<body><br>
+    <!-- ************************** Wrapper ************************** -->
+    <div id="wrapper">
+        <header>
+            <h1>Pacific Trails Resort</h1>
+        </header>
+    
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="yurts.html">Yurts</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+           
+        </nav>
+    
+        <main>
+            <h2>Reservations at Pacific Trails</h2>
+            <h3>Contact Us</h3> 
+            <p>
+                Required infomation is marked with an asterisk(*).
+            </p> 
+            <form method="post" onsubmit="return validationForm();" action="http://webdevbasics.net/scripts/pacific.php" id="myReservations" name="myReservations">
+                <label for="myFName">*First Name: </label>
+                <input type="text" id="myFName" name="myFName" class="required">
+                <label for="myLName">*Last Name: </label>
+                <input type="text" id="myLName" name="myLName" class="required">
+                <label for="myEmail">*Email: </label>
+                <input type="email" id="myEmail" name="myEmail" class="required email">
+                <label for="myPhone">Phone: </label>
+                <input type="tel" id="myPhone" name="myPhone" accesskey="P" tabindex="4">
+                <label for="myArrival">*Arrival<span class="formDate">(mm/dd/yyyy): </span></label>
+                <input type="date" id="myArrival" name="myArrival" class="required date">
+                <label for="myNights">*Nights: </label>
+                <input type="number" id="myNights" name="myNights">
+                <label for="myComments">Comments: </label>
+                <textarea id="myComments" name="myComments" rows="2" cols="20" accesskey="C" tabindex="7"></textarea>
+                <input type="submit" id="mySubmit" name="mySubmit" accesskey="S" tabindex="8" class="printHidden" value="Submit Form">
+                <input type="reset" id="myReset" name="myReset" accesskey="R" tabindex="9" class="printHiddent" value="Clear Form">
+                
+            </form>
+           
+        </main>
+    
+        <footer>
+           <br>
+                <div id="navBottom">
+                    <a href="index.html">Home</a> &nbsp; &nbsp;
+                    <a href="yurts.html">Yurts</a> &nbsp; &nbsp;
+                    <a href="activities.html">Activities</a> &nbsp; &nbsp;
+                    <a href="reservations.html">Reservations</a> &nbsp; &nbsp; 
+                    <a href="shop.html">Shop</a> &nbsp; &nbsp; <br>
+                </div>
+                Copyright &copy; 2022 Pacific Trails Resort<br>
+                <a href="mailto:tuyen.t.vu@my.occc.edu">tuyen.t.vu@my.occc.edu</a>
+                <script>
+                    document.write("<p>This document was last modified on: ");
+                    document.write(document.lastModified);
+                    document.write("</p>");
+                </script>
+        </footer>
+    </div>
+    
+</body>
+
+</html>

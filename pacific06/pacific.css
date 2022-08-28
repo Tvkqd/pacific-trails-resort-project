@@ -1,0 +1,153 @@
+/*---------------------------------------------------
+Project Name: Pacific03
+Author: Tuyen Vu
+Version: 1.0
+Last Changed: 02/01/2022
+Color:
+    Gray(background): #666
+    White(background): #FFF
+    Sky Blue(text): #90C7E3
+    Medium Blue(text): #39C
+    Dark Blue(text): #003
+    Dark Charcoal(text): #333
+Typography:
+    body: "Arial, Verdana, sans-serif"
+    header:  line-height: 200%; "Georgia, serif"
+    h1: line-height: 200%
+    h2: "Georgia, serif"
+    dt: bold
+    .resort: 1.2em
+    footer: .70em; italic; center
+----------------------------------------------------*/
+
+/*------------------Entire Page---------------------*/
+body {
+    background-color: #FFF;
+    color: #666;
+    font-family: Arial, Verdana, sans-serif;
+    background-image: url("images/background.jpg");
+}
+
+.clear {
+    overflow: auto;
+}
+
+header, nav, main, footer {
+    display: block;
+}
+
+/*------------------Wrapper-------------------------*/
+#wrapper {
+    width: 80%;
+    margin: auto;
+    background-color: #90C7E3;
+    min-width: 700px;
+    max-width: 1024px;
+    box-shadow: 3px 3px 3px #333;
+}
+
+/*------------------Nav-----------------------------*/
+nav {
+    font-weight: bold;
+    color: #90C7E3;
+    padding: 5px;
+    float: left;
+    width: 160px;
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    border: 2px outset #CCC;
+    background-color: #003;
+    color: #FFF;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+nav a:visited {
+    background-color: #90C7E3;
+}
+
+nav a:hover {
+    background-color: #39C;
+    border: 2px inset #666;
+}
+
+/*------------------Headings------------------------*/
+header {
+    background-color: #003;
+    color: #FFF;
+    font-family: Georgia, serif;
+}
+h1 {
+    line-height: 200%;
+    background-image: url("images/sunset.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    height: 72px;
+    margin-bottom: 0;
+}
+h2 {
+    color: #39c;
+    font-family: Georgia, serif;
+}
+h3 {
+    color: #003;
+}
+
+/*------------------Main----------------------------*/
+main {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    background-color: #FFF;
+    margin-left: 170px;
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-bottom: 1px;
+    padding-left: 20px;
+}
+
+main img {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+main ul {
+    list-style-position: inside;
+}
+
+dt {
+    color: #003;
+    font-weight: bold;
+}
+
+.resort {
+    color: #003;
+    font-size: 1.2em;
+}
+
+/*------------------Footer--------------------------*/
+footer {
+    font-size: .70em;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+    background-color: #FFF;
+    margin-left: 170px;
+
+}
+
