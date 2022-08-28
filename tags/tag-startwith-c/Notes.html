@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>c tag</title>
+
+    <!--CSS styling-->
+    <style>
+        table, th, td{
+        border: 1px solid black;
+        }
+
+        code {
+            font-family: Consolas, "courier new";
+            color: rgb(240, 47, 85);
+            background-color:rgb(199, 193, 193);
+            padding: 2px;
+            font-size: 105%;
+        }
+    </style>
+</head>
+<body>
+    <p>canvas tag --- drawing using Javascript</p>
+    <canvas id=myCanvas>
+        Your browser does not support the canvas tag
+    </canvas>
+    <script> 
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "red";
+        ctx.fillRect(20, 20, 75, 50);
+        ctx.globalAlpha = 0.2;
+        ctx.fillStyle = "green";
+        ctx.fillRect(50, 50, 75, 50);
+        ctx.fillStyle = "blue";
+        ctx.fillRect(80, 80, 75, 50);
+    </script>
+
+    <table>
+        <caption>caption tag --- go immediately after table tag </caption>
+        <caption style="text-align:right">text-align:right style</caption>
+        <caption style="caption-side:bottom">caption-side:bottom style</caption>
+        <colgroup>
+            <col span="2" style="background-color:lightpink">
+            <col span="3" style="background-color:powderblue">
+        </colgroup>
+        <tr>
+            <th>colgroup tag:</th>
+            <th>color the table</th>
+            <th>Column 3</th>
+            <th>Column 4</th>
+            <th>Column 5</th>
+        </tr>
+        <tr>
+            <td>span</td>
+            <td>number of columns</td>
+            <td>that want to color</td>
+            <td>Row 1</td>
+            <td>Row 1</td>
+        </tr>
+        <tr>
+            <td>style</td>
+            <td>set background</td>
+            <td>color</td>
+            <td>Row 2</td>
+            <td>Row 2</td>
+        </tr>
+    </table>
+    <br>
+
+    <img src="theScream.jpg" alt="The Scream">
+    <p><cite>The Scream</cite>---cite tag</p>
+
+    <p><code>code</code> tag --- hightlight the key words in coding</p>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!--declaration-->
+<!DOCTYPE html>
+
+<!--Startting here-->
+<html lang="en">
+
+<!--Head-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title of the page</title>
+    <!--For CSS Styling-->
+    <style>
+        .all-browsers{
+            margin: 0;
+            padding: 10px;
+            background-color:darkkhaki;
+        }
+        .all-browsers > h1, .browser{
+            margin: 10px;
+            padding: 5px;
+        }
+        .browser{
+            background-color:white;
+        }
+        .browser > h2, p{
+            margin: 4px;
+            font-size: 90%;
+        }
+        aside{
+            width: 20%;
+            padding-left: 15px;
+            margin-left: 15px;
+            float: right;
+            font-style: italic;
+            background-color: lightgray;
+            font-size: 130%;
+        }
+    </style>
+</head>
+
+<!--Body-->
+<body>
+    <h1>Heading of the page</h1>
+    <a href="https://www.w3schools.com/TAgs/tag_a.asp">a tag "href"--- Create a link</a>
+
+    <p>a tag "download"--- download file when clicking</p>
+    <p> download="newFileName" will change the downloaded file's name</p>
+    <a href="w3.jpg" download>
+        <img src="w3.jpg">
+    </a>
+
+    <P>a tag "hreflang"--- specify language using of the document in the link</P>
+    <a href="https://www.w3schools.com/TAgs/att_a_hreflang.asp" hreflang="en">Find language reference here</a>
+    
+    <aside>
+        <p>This is aside tag</p>
+        <p>Write something to make it look longer</p>
+    </aside>
+    
+    <p>a tag "target"---specify where to open the link</p>
+    <a href="https://www.w3schools.com/TAgs/att_a_target.asp" target="_blank">New tab</a>
+  
+    <p>abbr tag --- defines an abbreviation --- <abbr title="World Health Organization">WHO</abbr></p>
+    
+    <address>address tag<br>
+        Use to write address<br>
+        Use br to write on newline<br>
+    </address>
+    <p>Start the paragraph</p>
+    <em>Italic the text</em>
+    
+    <p>video tag --- Need both mp4 and ogg</p>
+    <video controls>
+        <source src="movie.mq4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+    </video>
+
+    <p>audio tag --- Chromes support ogg</p>
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+    </audio>
+
+    <p>map, area tag</p>
+    <img src="workplace.jpg" usemap="#workmap" width="400" height="400">
+    <map name="workmap">
+        <area shape="rect" coords="35, 40, 270, 370" alt="Computer" href="computer.txt">
+        <area shape="rect" coords="290, 180, 335, 260" alt="Phone" href="phone.txt">
+        <area shape="circle" coords="337, 315, 46" alt="Coffee" href="coffee.txt">
+    </map>
+
+<!--Styling with CSS-->
+    <article class="all-browsers">
+        <h1>article tag</h1>
+        <article class="browser">
+            <h2>Title 1</h2>
+            <p>This is the first paragraph in the first article.</p>
+        </article>
+        <article class="browser">
+            <h2>Title 2</h2>
+            <p>This is the second paragraph in the second article.</p>
+        </article>
+        <article class="browser">
+            <h2>Title 3</h2>
+            <p>This is the third paragraph in the third article.</p>
+        </article>
+    </article>
+
+<!--Ending here-->
+</html>
